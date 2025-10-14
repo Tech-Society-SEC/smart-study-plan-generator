@@ -13,7 +13,7 @@ Receiving adaptive study hour recommendations.
 
 Visualizing their personalized timetable.
 
-#🔹 Current Progress (Work Done ✅)
+# 🔹 Current Progress (Work Done ✅)
 
 The following phases have been completed:
 
@@ -67,7 +67,7 @@ Generates detailed and summary timetables.
 
 Exports schedules to CSV files for further use.
 
-#🔹 Upcoming Work (Next Steps)
+# 🔹 Upcoming Work (Next Steps)
 
 Phase 4: Streamlit integration for a user-friendly interface.
 
@@ -77,7 +77,7 @@ Phase 6: Documentation & deployment (GitHub + Streamlit Cloud).
 
 Phase 7: Final presentation & demo.
 
-#🔹 Tech Stack
+# 🔹 Tech Stack
 
 Language: Python 🐍
 
@@ -85,6 +85,6 @@ Libraries: NumPy, Pandas, TensorFlow/Keras, Streamlit, Matplotlib
 
 Tools: Jupyter/Colab for development, GitHub for version control
 
-#🔹 Project Status
+# 🔹 Project Status
 
 🚧 In Progress – Currently at Phase 1–3 (Problem Definition + Dataset Creation + Model Training + Weekly Scheduler).
