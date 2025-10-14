@@ -1,5 +1,5 @@
 # 📘 Smart Study Plan Generator
-## 🔹 Overview
+# 🔹 Overview
 
 The Smart Study Plan Generator is an AI-powered project designed to help students create personalized study plans based on their academic profile, learning style, and available free time. The system uses deep learning models to recommend study hours per subject and then maps them into a structured timetable.
 
@@ -13,9 +13,9 @@ Receiving adaptive study hour recommendations.
 
 Visualizing their personalized timetable.
 
-## 🔹 Current Progress (Work Done ✅)
+#🔹 Current Progress (Work Done ✅)
 
-So far, the following phases have been completed:
+The following phases have been completed:
 
 Problem Definition
 
@@ -27,7 +27,7 @@ Identified outputs: recommended study hours per subject and timetable generation
 
 Dataset Creation
 
-Created a synthetic dataset to simulate student profiles.
+Created a synthetic dataset of 2000 student profiles with realistic patterns.
 
 Dataset includes fields like:
 
@@ -37,38 +37,54 @@ GPA
 
 Learning Style (Visual, Auditory, Kinesthetic)
 
-Free Slots (per day/week)
+Available Hours per Day & Free Days per Week
 
-Preferred Study Hours
+Subject Count
 
-Subjects & Priorities
+Exam Priority
 
-Data structured and stored for training the model in the next phase.
+Weak Subjects Count
 
-## 🔹 Upcoming Work (Next Steps)
+Recommended Hours Per Subject (calculated realistically based on GPA and weak subjects)
 
-The planned roadmap is as follows:
+Model Development
 
-Phase 2: Build & train a deep neural network model to predict study hours.
+Built a deep neural network using TensorFlow/Keras to predict study hours per subject.
 
-Phase 3: Develop scheduler logic to map predicted study hours into free slots.
+Preprocessing includes standard scaling for numeric features and one-hot encoding for categorical features.
 
-Phase 4: Streamlit integration for user interface.
+Model trained with early stopping, learning rate reduction, and best model checkpointing.
 
-Phase 5: Testing & visualization with charts and timetables.
+Scheduler Logic
+
+Developed weekly schedule generation:
+
+Maps predicted study hours into available study days.
+
+Allocates extra hours to weak subjects.
+
+Generates detailed and summary timetables.
+
+Exports schedules to CSV files for further use.
+
+#🔹 Upcoming Work (Next Steps)
+
+Phase 4: Streamlit integration for a user-friendly interface.
+
+Phase 5: Testing & visualization with interactive charts and timetables.
 
 Phase 6: Documentation & deployment (GitHub + Streamlit Cloud).
 
 Phase 7: Final presentation & demo.
 
-## 🔹 Tech Stack
+#🔹 Tech Stack
 
 Language: Python 🐍
 
-Libraries: NumPy, Pandas, TensorFlow / PyTorch (planned), Streamlit (planned), Matplotlib.
+Libraries: NumPy, Pandas, TensorFlow/Keras, Streamlit, Matplotlib
 
-Tools: Jupyter/Colab for development, GitHub for version control.
+Tools: Jupyter/Colab for development, GitHub for version control
 
-## 🔹 Project Status
+#🔹 Project Status
 
-🚧 In Progress – Currently at Phase 1–2 (Problem Definition + Dataset Creation).
+🚧 In Progress – Currently at Phase 1–3 (Problem Definition + Dataset Creation + Model Training + Weekly Scheduler).
