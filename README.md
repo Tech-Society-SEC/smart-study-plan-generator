@@ -1,90 +1,105 @@
 # 📘 Smart Study Plan Generator
-# 🔹 Overview
 
-The Smart Study Plan Generator is an AI-powered project designed to help students create personalized study plans based on their academic profile, learning style, and available free time. The system uses deep learning models to recommend study hours per subject and then maps them into a structured timetable.
+## 🔹 Overview
+The *Smart Study Plan Generator* is an *AI-powered system* that helps students create *personalized study plans* based on their *academic profile, learning style, and available time*.  
+Using *deep learning models, it predicts optimal study hours per subject and automatically maps them into a **structured weekly timetable, displayed through an **interactive Streamlit interface*.
 
-This project aims to assist learners in:
+This project helps learners:
 
-Organizing study schedules effectively.
+- 📅 Organize their study schedules effectively  
+- ⏰ Manage time efficiently based on available slots  
+- 🧠 Receive adaptive, AI-driven study hour recommendations  
+- 📊 Visualize their personalized timetables interactively  
 
-Managing time based on free slots.
+---
 
-Receiving adaptive study hour recommendations.
+## 🔹 Completed Work (Work Done ✅)
 
-Visualizing their personalized timetable.
+### *Phase 1 – Problem Definition*
+- Defined the main goal: build an AI-driven system to generate personalized study plans.  
+- Identified input parameters: *GPA, **learning style, **available hours, **subject count, **exam priority, and **weak subjects*.  
+- Defined outputs: *recommended study hours per subject* and *auto-generated timetable*.
 
-# 🔹 Current Progress (Work Done ✅)
+### *Phase 2 – Dataset Creation*
+- Created a *synthetic dataset* of *2000 student profiles* with realistic academic and behavioral patterns.  
+- Dataset includes:
+  - student_id
+  - gpa
+  - learning_style (Visual / Auditory / Kinesthetic)
+  - available_hours_per_day
+  - free_days_per_week
+  - subject_count
+  - exam_priority
+  - weak_subjects_count
+  - recommended_hours_per_subject (calculated based on patterns)
 
-The following phases have been completed:
+### *Phase 3 – Model Development*
+- Built a *Deep Neural Network (DNN)* using *TensorFlow/Keras* to predict study hours per subject.  
+- Preprocessing:
+  - *Standard scaling* for numeric features  
+  - *One-hot encoding* for categorical features  
+- Implemented training optimizations:
+  - *Early stopping, **learning rate reduction, and **checkpointing*  
+- Model saved and validated for real-time predictions.
 
-Problem Definition
+### *Phase 3.5 – Scheduler Logic*
+- Developed a *weekly timetable generator* that:
+  - Distributes predicted study hours across available days.  
+  - Allocates additional time to weak subjects.  
+  - Generates both *detailed* and *summary* versions of the schedule.  
+  - Exports data to *CSV* for reuse or analysis.
 
-Defined the main objective: build an AI system to generate personalized study plans.
+### *Phase 4 – Streamlit Integration ✅ (Completed)*
+- Successfully integrated the AI model and scheduler into a *Streamlit web app*.  
+- Added an *interactive interface* where users can:
+  - Input their academic and personal details.  
+  - View predicted study hours and personalized timetables.  
+  - Download their generated schedules.  
+- Included *visual charts* (Matplotlib/Plotly) for easy analysis.  
 
-Identified inputs: GPA, learning style, available free slots, etc.
+---
 
-Identified outputs: recommended study hours per subject and timetable generation.
+## 🔹 Upcoming Work (Next Steps 🚀)
 
-Dataset Creation
+### *Phase 5 – Testing & Visualization Enhancement*
+- Conduct large-scale testing with multiple user profiles.  
+- Refine UI with improved visuals, charts, and responsive layout.  
 
-Created a synthetic dataset of 2000 student profiles with realistic patterns.
+### *Phase 6 – Documentation & Deployment*
+- Finalize *project documentation*, user guide, and code comments.  
+- Deploy the final Streamlit app on *Streamlit Cloud*.  
+- Push source code and documentation to *GitHub*.
 
-Dataset includes fields like:
+### *Phase 7 – Final Presentation & Demo*
+- Prepare slides, demo video, and report for project presentation.
 
-Student ID
+---
 
-GPA
+## 🔹 Tech Stack
 
-Learning Style (Visual, Auditory, Kinesthetic)
+| Category | Tools / Libraries |
+|-----------|------------------|
+| *Language* | Python 🐍 |
+| *Libraries* | NumPy, Pandas, TensorFlow/Keras, Streamlit, Matplotlib, Plotly |
+| *Development Tools* | Jupyter Notebook / Google Colab |
+| *Version Control* | Git & GitHub |
+| *Deployment* | Streamlit Cloud |
 
-Available Hours per Day & Free Days per Week
+---
 
-Subject Count
+## 🔹 Project Status
+✅ *Phases 1–4 Completed* (Problem Definition, Dataset Creation, Model Training, Scheduler Logic, Streamlit Integration)  
+🚧 *Currently Working On:* Phase 5 – Testing & Visualization Enhancement  
+🎯 *Next Goal:* Refine visualizations and prepare for deployment.
 
-Exam Priority
+---
 
-Weak Subjects Count
+## 🔹 Output Got
 
-Recommended Hours Per Subject (calculated realistically based on GPA and weak subjects)
+![WhatsApp Image 2025-10-31 at 08 51 30_2f5c16e7](https://github.com/user-attachments/assets/ce792558-bab8-4396-871d-5826f31a9204)
 
-Model Development
+![WhatsApp Image 2025-10-31 at 08 51 49_78164be5](https://github.com/user-attachments/assets/ed527927-35e0-4c04-8075-d48648bc5a2a)
 
-Built a deep neural network using TensorFlow/Keras to predict study hours per subject.
+![WhatsApp Image 2025-10-31 at 08 52 34_bb970b4c](https://github.com/user-attachments/assets/465180b9-ec4e-498d-8dbf-876b3f91282e)
 
-Preprocessing includes standard scaling for numeric features and one-hot encoding for categorical features.
 
-Model trained with early stopping, learning rate reduction, and best model checkpointing.
-
-Scheduler Logic
-
-Developed weekly schedule generation:
-
-Maps predicted study hours into available study days.
-
-Allocates extra hours to weak subjects.
-
-Generates detailed and summary timetables.
-
-Exports schedules to CSV files for further use.
-
-# 🔹 Upcoming Work (Next Steps)
-
-Phase 4: Streamlit integration for a user-friendly interface.
-
-Phase 5: Testing & visualization with interactive charts and timetables.
-
-Phase 6: Documentation & deployment (GitHub + Streamlit Cloud).
-
-Phase 7: Final presentation & demo.
-
-# 🔹 Tech Stack
-
-Language: Python 🐍
-
-Libraries: NumPy, Pandas, TensorFlow/Keras, Streamlit, Matplotlib
-
-Tools: Jupyter/Colab for development, GitHub for version control
-
-# 🔹 Project Status
-
-🚧 In Progress – Currently at Phase 1–3 (Problem Definition + Dataset Creation + Model Training + Weekly Scheduler).
