@@ -96,9 +96,9 @@ This project helps learners:
 
 ## 🔹 Output Got
 
-![WhatsApp Image 2025-10-31 at 08 51 30_2f5c16e7](https://github.com/user-attachments/assets/ce792558-bab8-4396-871d-5826f31a9204)
+![WhatsApp Image 2025-10-31 at 09 04 24_bc34eb01](https://github.com/user-attachments/assets/cb995bbc-2228-4b0f-b4f5-0e16c9da4018)
 
-![WhatsApp Image 2025-10-31 at 08 51 49_78164be5](https://github.com/user-attachments/assets/ed527927-35e0-4c04-8075-d48648bc5a2a)
+![WhatsApp Image 2025-10-31 at 08 51 30_2f5c16e7](https://github.com/user-attachments/assets/ce792558-bab8-4396-871d-5826f31a9204)
 
 ![WhatsApp Image 2025-10-31 at 08 52 34_bb970b4c](https://github.com/user-attachments/assets/465180b9-ec4e-498d-8dbf-876b3f91282e)
 
